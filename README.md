@@ -1,34 +1,18 @@
-Warcaby (C++)
-CEL PROJEKTU
-Stworzenie gry w warcaby przeznaczonej dla 2 graczy oraz dla 1 gracza (rozgrywka przeciwko sztucznej inteligencji - AI).
+# Warcaby (C++)
 
-ZALEŻNOŚCI (WYMAGANIA)
-Kompilator g++, biblioteka standardowa C/C++.
+## WYKONAWCY (AUTORZY)
+* **Mateusz Wollmann** (nr indeksu: 331708)
+* **Patryk Szupryczyński** (nr indeksu: 331700)
 
-JAK URUCHOMIĆ PROJEKT
-Uruchom polecenie make w terminalu, aby skompilować projekt (opcjonalnie możesz wcześniej wykonać make clean). Następnie uruchom główny program za pomocą komendy ./checkers.
+## CEL PROJEKTU
+Stworzenie gry w warcaby przeznaczonej dla 2 graczy (lokalnie) oraz dla 1 gracza (rozgrywka przeciwko sztucznej inteligencji - AI).
 
-PODSUMOWANIE KLAS
-HumanPlayer
-Odpowiada za interakcję z graczem człowieczym w celu pobrania jego ruchu i zastosowania go na planszy.
+## ZALEŻNOŚCI (WYMAGANIA)
+Kompilator `g++` (wspierający standard C++11), biblioteka standardowa C/C++, narzędzie `GNU Make`.
 
-Uwaga: Założenia projektu zostały w tym miejscu zmienione – ruchy są teraz identyfikowane poprzez wyświetlenie użytkownikowi listy legalnych opcji, z której dokonuje on wyboru.
+## JAK URUCHOMIĆ PROJEKT
+Szczegółowa i pełna instrukcja dotycząca konfiguracji środowiska oraz uruchomienia programu znajduje się w **Sprawozdaniu z projektu (Sekcja 4.1)**. 
 
-AIPlayer
-Odpowiada za wykorzystanie algorytmów sztucznej inteligencji do wyznaczenia efektywnego ruchu i zastosowania go na planszy.
-
-Board
-Przechowuje stan planszy oraz pionków i umożliwia manipulowanie nimi.
-
-Piece
-Odpowiada za przechowywanie danych powiązanych z konkretnym pionkiem oraz określanie jego właściwości (takich jak np. dostępne ruchy).
-
-Move
-Przechowuje dane związane z ruchem pionka oraz udostępnia metody do wyznaczania jego dalszych właściwości (np. pobieranie zbitych pionków).
-
-Typedef.h
-Zawiera kilka definicji typów danych (aliasów), które są niezbędne w różnych aspektach działania programu.
-
-Podsumowanie pozostałych klas:
-Player (Klasa abstrakcyjna)
-Odpowiada za zarysowanie wspólnych metod dla klas HumanPlayer i AIPlayer, dzięki czemu mogą być one używane w kodzie zamiennie (polimorfizm).
+W skrócie projekt można uruchomić na dwa sposoby:
+1. **Kompilacja ze źródeł:** Uruchom polecenie `make clean` (opcjonalnie), a następnie `make` w terminalu, aby skompilować projekt. Program uruchamia się komendą `./projekt-warcaby.exe`.
+2. **Uruchomienie gotowej wersji:** W przesłanej paczce z projektem znajduje się już w pełni skompilowany i gotowy plik wykonywalny `projekt-warcaby.exe`.
